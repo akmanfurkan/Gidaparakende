@@ -22,10 +22,11 @@ class Yemeklerdao {
         
         do {
             let rs = try
-            db!.executeQuery("SELECT * FROM yemekler", values: nil)
+            db!.executeQuery("SELECT * FROM yemekler,kisiler Where yemekler.kisi_id = kisiler.kisi_id", values: nil)
             
             while rs.next() {
-                let yemek = Yemekler(yemek_id: Int(rs.string(forColumn: "yemek_id"))!, yemek_ad: rs.string(forColumn: "yemek_ad")!, fiyat: Int(rs.string(forColumn: "fiyat"))!)
+                let kisi = Kisiler(kisi_id: Int(rs.string(forColumn: "kisi_id"))!, kisi_ad: rs.string(forColumn: "kisi_ad"), kisi_cinsiyet: rs.string(forColumn: "kisi_cinsiyet"), kisi_sehir: rs.string(forColumn: "kisi_sehir"), kisi_adres: rs.string(forColumn: "kisi_sehir"), kisi_tel: Int(rs.string(forColumn: "kisi_tel"))!)
+                let yemek = Yemekler(yemek_id: Int(rs.string(forColumn: "yemek_id"))!, yemek_ad: rs.string(forColumn: "yemek_ad"), fiyat: Int(rs.string(forColumn: "fiyat"))!, kisi: kisi)
                 liste.append(yemek)
             }
         } catch  {
@@ -37,11 +38,11 @@ class Yemeklerdao {
         db?.close()
         return liste
     }
-    func yemekEkle(yemek_ad:String,fiyat:Int){
+    func yemekEkle(yemek_ad:String,fiyat:Int,kisi_id:Int){
         db?.open()
         
         do {
-            try db!.executeUpdate("INSERT INTO yemekler (yemek_ad,fiyat) VALUES (?,?)", values: [yemek_ad,fiyat])
+            try db!.executeUpdate("INSERT INTO yemekler (yemek_ad,fiyat,kisi_id) VALUES (?,?,?)", values: [yemek_ad,fiyat,kisi_id])
         } catch  {
             print(error.localizedDescription)
         }

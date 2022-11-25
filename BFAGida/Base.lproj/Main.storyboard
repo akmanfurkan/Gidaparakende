@@ -408,6 +408,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buraya &quot;1&quot; Yazınız" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7Z-6B-aHM">
+                                <rect key="frame" x="121" y="517" width="168" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HLZ-Tu-feT"/>
                         <color key="backgroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -432,13 +438,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="idtextfield" destination="W7Z-6B-aHM" id="9b8-GV-uaI"/>
                         <outlet property="yemekAdiTextfield" destination="rpZ-cn-wby" id="yUo-qd-MC3"/>
                         <outlet property="yemekFiyatiTextfield" destination="Esn-Gn-8lK" id="2FQ-tP-mP3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyP-Xk-Nn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2147.826086956522" y="637.5"/>
+            <point key="canvasLocation" x="2147.826086956522" y="655.58035714285711"/>
         </scene>
         <!--Ürün Silme Ekranı-->
         <scene sceneID="sSK-vV-TTM">
@@ -494,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZG-Pd-ltj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2835" y="638"/>
+            <point key="canvasLocation" x="2835" y="656"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DTf-br-7hc">

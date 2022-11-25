@@ -30,6 +30,7 @@
 		B46D95502931495A00365A28 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B46D95492931495900365A28 /* FMDatabaseQueue.m */; };
 		B46D95512931495A00365A28 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B46D954A2931495900365A28 /* FMResultSet.m */; };
 		B46D955329314A9D00365A28 /* bfa.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B46D955229314A9D00365A28 /* bfa.sqlite */; };
+		B4F1FF78293152B1006AD65C /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1FF77293152B1006AD65C /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		B46D954B2931495900365A28 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		B46D954C2931495A00365A28 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		B46D955229314A9D00365A28 /* bfa.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfa.sqlite; sourceTree = "<group>"; };
+		B4F1FF77293152B1006AD65C /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				B46D95012931420600365A28 /* ViewController.swift */,
 				B46D955229314A9D00365A28 /* bfa.sqlite */,
 				B46D95032931420600365A28 /* Main.storyboard */,
+				B4F1FF77293152B1006AD65C /* Kisiler.swift */,
 				B46D95392931444700365A28 /* TableViewHucre.swift */,
 				B46D953B2931446100365A28 /* Yemekler.swift */,
 				B46D953D2931446B00365A28 /* Yemeklerdao.swift */,
@@ -334,6 +337,7 @@
 				B46D95502931495A00365A28 /* FMDatabaseQueue.m in Sources */,
 				B46D95512931495A00365A28 /* FMResultSet.m in Sources */,
 				B46D952E293142F700365A28 /* ViewController2.swift in Sources */,
+				B4F1FF78293152B1006AD65C /* Kisiler.swift in Sources */,
 				B46D953A2931444700365A28 /* TableViewHucre.swift in Sources */,
 				B46D953C2931446100365A28 /* Yemekler.swift in Sources */,
 				B46D94FE2931420600365A28 /* AppDelegate.swift in Sources */,

@@ -14,6 +14,7 @@ class ViewController5: UIViewController {
     
     @IBOutlet weak var yemekFiyatiTextfield: UITextField!
     
+    @IBOutlet weak var idtextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,10 +23,10 @@ class ViewController5: UIViewController {
     
 
     @IBAction func yemekekle(_ sender: Any) {
-        if let ad = yemekAdiTextfield.text , let fiyat = yemekFiyatiTextfield.text {
+        if let ad = yemekAdiTextfield.text , let fiyat = yemekFiyatiTextfield.text , let id = idtextfield.text {
             
-            if let f = Int(fiyat) {
-                Yemeklerdao().yemekEkle(yemek_ad: ad, fiyat: f)
+            if let f = Int(fiyat), let i = Int(id) {
+                Yemeklerdao().yemekEkle(yemek_ad: ad, fiyat: f, kisi_id: i)
             }
             
         }
